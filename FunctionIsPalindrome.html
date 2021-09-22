@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Write a function that tests whether a string is a palindrome. -->
+   
+     
+    
+
+    <script>
+
+        var rev = "";
+
+        var input = prompt("Enter Name here");
+        document.write(` enterd Name: ${input}`, "<br>");
+
+        function check() {
+
+            for (var i = input.length - 1; i >= 0; i--) {
+                rev = rev + input[i]
+            }
+            document.write(` reverse: ${rev}`, "<br>");
+            if(input==rev){
+                document.write(`${input} is a palindrom`,"<br>");
+            }
+            else{
+                document.write(`${input} is not a palindrom`,"<br>");
+            }
+
+        }
+        check();
+//--------  a string is a palindrome.
+
+        // function check1() {
+        //     var input = prompt("Enter Name here");
+        //     document.write(` enterd Name: ${input}`,"<br>");
+        //     var splitName = input.split("");
+        //     document.write(` splite Name: ${splitName}`,"<br>");
+        //     var reverseSplit = splitName.reverse();
+        //     document.write(` reverse : ${reverseSplit}`,"<br>");
+        //     var joinReverse = reverseSplit.join("");
+        //     document.write(` join: ${joinReverse}`,"<br>");
+        //     if(input==joinReverse){
+        //         document.write(`${input} is a palindrom`,"<br>");
+        //     }
+        //     else{
+        //         document.write(`${input} is not a palindrom`,"<br>");
+        //     }
+        
+            
+        // }
+        // check1();
+
+
+//--------  a string is a palindrome.
+
+
+        // function test() {
+
+        //     arr = [1,2,3,4]
+        //     rev = []
+        //     for(var i=0; i<4; i++) {
+
+        //         ele = arr.pop()
+        //         rev.push(ele)
+        //     } 
+        //     document.write(`reversed: ${rev}`, "<br>");
+        // }
+        // test()
+
+    </script>
+</body>
+
+</html>
